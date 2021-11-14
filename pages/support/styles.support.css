@@ -1,0 +1,99 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+h1{
+    font-weight: 500;
+    font-size: 65px;
+    margin-left: 90px;
+}
+
+
+button{
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    border-style: solid;
+    border-width: 0.8px;
+    border-color: #fff5f0;
+    font-size: 1.5rem;
+    color: #fff5f0;
+    font-weight: 300;
+    margin: 50px;
+    height: 5.0rem;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.helpAdditionalsItem{
+    display: flex;
+    justify-content: space-between;
+    -webkit-text-size-adjust: 100%;
+    -webkit-box-direction: normal;
+    box-sizing: border-box;
+    margin: 0;
+    margin-left: 80px;
+    width: 85%;
+    height: 5.0rem;
+    margin-bottom: 0px;
+    padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+    border: 0.8px solid #cccccc;
+    border-style: solid;
+    border-width: 0.8px;
+    border-color: #fff5f0;
+    background-color: transparent;
+    color: #fff5f0;
+    font-size: 1.5rem;
+    font-weight: 300;
+    
+}
+
+.helpAdditionalsItem:hover{
+    transform: scaleY(0.98);
+    transition: all 0.8s;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    margin-left: 150px;
+}
+
+
+.helpLogin{
+    position: relative;
+    font-size: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    border: 1px solid #cccccc;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff5f0;
+    background-color: #fff5f0;
+    color: black;
+}
+
+button:hover{
+    transition: all 0.5s;
+    transform: scale(1.08);
+}
+
+.helpLoginIntro{
+    font-size: 1.5rem;
+    margin: 40px;
+    margin-bottom: none;
+}
+
+.right-arrow-head{
+    font-size: 40px;
+    justify-content: flex-end;
+}
+
+.helpLoginButtona{
+    display: flex;
+    justify-content: space-between;
+}
+
+.helpAdditionals{
+    margin-top: 35px;
+}
