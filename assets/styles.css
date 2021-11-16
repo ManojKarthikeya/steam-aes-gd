@@ -1,9 +1,9 @@
 body{
-    background-color: black;
+    background-color: #141414;
     color: white;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
-    /* cursor: none; */
+    cursor: none;
 }
 
 .main{
@@ -96,8 +96,8 @@ p{
     pointer-events: none;
     z-index: 1000;
     position: absolute;
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
     background: #fff;
     border-radius: 50%;
     top: var(--y, 0);
