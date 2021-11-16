@@ -1,0 +1,119 @@
+.features_area {
+    text-align: center;
+    width: max-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.feature_icon {
+    font-size: 12px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+    align-content: center;
+    justify-content: center;
+    z-index: 9;
+    position: relative;
+    background-color: rgba(62, 62, 62, .5);
+    background-image: none;
+    margin: 0 auto -42px;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    transition: background-image 600ms ease;
+    overflow: hidden;
+}
+
+.feature:hover .feature_icon {
+    background-image: linear-gradient(to right, #06BFFF, #2B74FF);
+    transition: opacity 600ms ease;
+}
+
+.feature:hover .feature_content {
+    background-color: #18191A;
+}
+
+.feature:hover .feature_btn {
+    visibility: visible;
+}
+
+.feature_btn {
+    margin-top: 10px;
+    color: rgb(24, 81, 204);
+    visibility: hidden;
+}
+
+.features_grid {
+    max-width: 70%;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 40px auto 70px;
+    margin-top: 50px;
+}
+
+.feature {
+    cursor: pointer;
+    text-align: center;
+    padding: 0;
+    width: 30%;
+    margin: 20px 1.5% 0;
+}
+
+.feature_content {
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+    background: transparent;
+    border-radius: 30px;
+    padding: 50px 10px 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: calc(100% - 50px);
+    transition: background 600ms ease;
+
+}
+
+div {
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background-color: #141414;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+svg {
+    fill: #ffffff;
+    padding: 0;
+    margin: 0;
+    border: none;
+    max-width: 100%;
+    position: relative;
+    z-index: 5;
+    display: block;
+    height: 100%;
+    width: 50%;
+}
+
+.feature_main_title{
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.feature_subtitle{
+    font-size: 20px;
+}
