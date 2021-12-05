@@ -1,0 +1,167 @@
+body {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #212121;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+    font-size: 24px;
+    color: #0D7377;
+}
+
+.store-header {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    color: #0D7377;
+}
+
+.navbar {
+    padding-left: 20px;
+    position: relative;
+    top: 50%;
+    margin-left: auto;
+    align-self: center;
+    display: flex;
+    justify-content: flex-start;
+    background-color: transparent;
+    color: #0D7377;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #0D7377;
+    border-radius: 15px;
+    height: 2.7rem;
+}
+
+
+.store-header-search {
+    /*  */
+    color: #0D7377;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: transparent;
+    border: none;
+}
+
+
+.store-header-item {
+    cursor: pointer;
+    margin: 30px;
+}
+
+.store-header-item:hover {
+    color: #14FFEC;
+}
+
+.find-svg {
+    margin: 8px;
+    fill: #0D7377;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+.flex-container{
+    display: flex;
+    margin-top: 30px;
+    position: relative;
+    width: 95%;
+    height: 80vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.leftmain{
+    border-radius: 10px;
+    position: fixed;
+    background-image: url("https://image.api.playstation.com/vulcan/ap/rnd/202108/0410/2odx6gpsgR6qQ16YZ7YkEt2B.png");
+    background-size: cover;
+    width: 75%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.desc-buttons{
+    position: relative;
+    top: 100%;
+    transform: translateY(-100%);
+    color: white;
+    align-self: flex-end;
+}
+
+.right-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: auto;
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+
+.store-item{
+    cursor: pointer;
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.store-item:hover{
+    color: #14FFEC;
+    background-color: #323232;
+}
+
+.desc-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    opacity: 0.9;
+    background: linear-gradient(transparent,black);
+    padding-bottom: 40px;
+}
+
+.desc{
+    padding-bottom: 30px;
+    position: relative;
+    margin-left: 40px;
+    word-wrap: break-word;
+    max-width: 30%;
+}
+
+.button-container{
+    font-size: 17px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.buynow{
+    cursor: pointer;
+    padding-top: 30px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 40px;
+    background-color: #0D7377;
+    width: 175px;
+    height: 60px;
+}
+
+.addtowishlist{
+    cursor: pointer;
+    padding-top: 30px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-left: 10px;
+    width: 230px;
+    height: 60px;
+}
+
+.addtowishlist:hover{
+    transition: 1s background-color;
+    background-color: #323232;
+}
+
