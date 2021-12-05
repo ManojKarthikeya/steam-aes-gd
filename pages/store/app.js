@@ -36,22 +36,32 @@ const games = [
     },
     {
         id: 6 ,
-        name: 'Resident Evil 3',
+        name: 'Resident Evil Village',
         description: "Experience survival horror like never before in the 8th major installment in the Resident Evil franchise - Resident Evil Village. With detailed graphics, intense first-person action and masterful storytelling, the terror has never felt more realistic.",
         image:"https://wallpapercave.com/wp/wp8737802.png",
         price: 3499.00
     }
 ]
 
-const desc = document.querySelector(".desc");
-const list = document.querySelector(".right-list");
-const img = document.querySelector(".leftmain");
-
-function listClickHandler(){
-    for(let game of games){
-        console.log(game)
-    }
+const listNames = document.querySelector(".right-list");
+let gameList = document.querySelector(".desc");
+let gameImg = document.querySelector(".leftmain");
+for(i=0;i<listNames.children.length;i++){
+    listNames.children[i].addEventListener("click",gameButtonClickHandler);
 }
 
-list.addEventListener("click",listClickHandler)
+function gameButtonClickHandler(ab){
+    
+    for(i=0;i<games.length;i++){
+        if(games[i].name == ab.target.textContent){
+            gameList.innerHTML=games[i].description;
+            
+            
+            gameImg.style.backgroundImage = `url(${games[i].image})`;
+        }
+    }
 
+
+    
+    //console.log(ab.target.textContent)
+}
