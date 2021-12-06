@@ -22,7 +22,7 @@ const games = [
     },
     {
         id: 4,
-        name: 'Dark Souls 3',
+        name: 'Dark Souls III',
         description: "Dark Souls continues to push the boundaries with the latest, ambitious chapter in the critically-acclaimed and genre-defining series. Prepare yourself and Embrace The Darkness!",
         image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/773966be-6e02-41dd-8ee2-b6c03e90b854/d8xh5hd-97c09549-0240-45cf-a378-49d7b97b031f.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc3Mzk2NmJlLTZlMDItNDFkZC04ZWUyLWI2YzAzZTkwYjg1NFwvZDh4aDVoZC05N2MwOTU0OS0wMjQwLTQ1Y2YtYTM3OC00OWQ3Yjk3YjAzMWYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.9E3WkJ8-EiR7mfuQr8JF29GhWcV-l7xkyITJAKQchms",
         price: 4299.00
@@ -47,6 +47,7 @@ const games = [
 const listNames = document.querySelector(".right-list");
 let gameList = document.querySelector(".desc");
 let gameImg = document.querySelector(".leftmain");
+let gamesList = document.querySelector(".games-list");
 for(i=0;i<listNames.children.length;i++){
     listNames.children[i].addEventListener("click",gameButtonClickHandler);
 }
@@ -59,3 +60,19 @@ function gameButtonClickHandler(ab){
         }
     }
 }
+
+
+
+for(i=0;i<games.length;i++){
+    const newDiv = document.createElement("div");
+    newDiv.innerHTML= `<div class="game">
+<div class="gameimage" style="background-image: url(${games[i].image})"></div>
+<div class="content">
+    <div class="gamename">${games[i].name}</div>
+    <div class="gamedesc">${games[i].description}</div>
+    <div class="price">${games[i].price}</div>
+</div>
+</div>`;
+gamesList.appendChild(newDiv);
+}
+
