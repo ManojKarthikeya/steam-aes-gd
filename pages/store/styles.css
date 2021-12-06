@@ -15,7 +15,30 @@ body {
     color: #0D7377;
 }
 
+.games-title{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    width: max-content;
+    position: relative;
+    left: 51%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.toppicks{
+    font-weight: bold;
+    font-size: 30px;
+    width: max-content;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
 .navbar {
+    width: 220px;
     padding-left: 20px;
     position: relative;
     top: 50%;
@@ -66,7 +89,7 @@ input:focus {
     margin-top: 30px;
     position: relative;
     width: 95%;
-    height: 80vh;
+    height: 75vh;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -74,11 +97,12 @@ input:focus {
 .leftmain{
     border-radius: 10px;
     position: fixed;
-    background-image: url("https://image.api.playstation.com/vulcan/ap/rnd/202108/0410/2odx6gpsgR6qQ16YZ7YkEt2B.png");
+    background-image: url("https://images4.alphacoders.com/115/thumb-1920-1151249.jpg");
     background-size: cover;
     width: 75%;
     height: 100%;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .desc-buttons{
@@ -90,6 +114,7 @@ input:focus {
 }
 
 .right-list{
+    font-size: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -102,7 +127,7 @@ input:focus {
 .store-item{
     cursor: pointer;
     margin-left: 50px;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
 }
 
@@ -118,8 +143,8 @@ input:focus {
     font-weight: bold;
     position: relative;
     width: 100%;
-    height: 50%;
-    opacity: 0.9;
+    height: 60%;
+    opacity: 1;
     background: linear-gradient(transparent,black);
     padding-bottom: 40px;
 }
@@ -165,3 +190,53 @@ input:focus {
     background-color: #323232;
 }
 
+.games-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.game{
+    margin: 10px;
+    padding: 10px;
+    min-width: 28.5%;
+}
+
+.gameimage{
+    background-size: cover;
+    position: relative;
+    background-image: url(https://wallpapercave.com/wp/wp3109434.jpg);
+    width: 441.6px;
+    height: 248.4px;
+    border-radius: 15px;
+}
+
+.content{
+    margin: 25px;
+}
+
+.gamename{
+    font-weight: bold;
+    font-size: 24px;
+    color:#19d1c2;
+}
+
+.gamedesc{
+    word-wrap: break-word;
+    font-size: 17px;
+    max-width: 395px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.price{
+    margin-top: 20px;
+    font-size: 24px;
+    color: #19d1c2;
+}
+
+.game:hover{
+    transform: scale(1.05);
+    transition: 0.3s transform;
+}

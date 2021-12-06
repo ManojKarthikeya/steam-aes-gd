@@ -3,7 +3,7 @@ const games = [
         id: 1 ,
         name: 'Elden Ring',
         description: "THE NEW FANTASY ACTION RPG. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.",
-        image:'https://image.api.playstation.com/vulcan/ap/rnd/202108/0410/2odx6gpsgR6qQ16YZ7YkEt2B.png',
+        image:'https://images4.alphacoders.com/115/thumb-1920-1151249.jpg',
         price: 2499.00
     },
     {
@@ -15,30 +15,31 @@ const games = [
     },
     {
         id: 3 ,
-        name: 'Control',
-        description: "Winner of over 80 awards, Control is a visually stunning third-person action-adventure that will keep you on the edge of your seat.",
-        image: 'https://www.escapistmagazine.com/wp-content/uploads/2020/08/Control-702x395.jpg',
+        name: 'Assassins Creed Origins',
+        description: "Ancient Egypt, a land of majesty and intrigue, is disappearing in a ruthless fight for power. Unveil dark secrets and forgotten myths as you go back to the one founding moment: The Origins of the Assassin’s Brotherhood.",
+        image: "https://wallpapercave.com/wp/wp3109434.jpg",
         price: 2999.00
     },
     {
         id: 4,
         name: 'Dark Souls 3',
         description: "Dark Souls continues to push the boundaries with the latest, ambitious chapter in the critically-acclaimed and genre-defining series. Prepare yourself and Embrace The Darkness!",
-        image: 'https://cdn.akamai.steamstatic.com/steam/apps/374320/capsule_616x353.jpg?t=1636678210',
+        image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/773966be-6e02-41dd-8ee2-b6c03e90b854/d8xh5hd-97c09549-0240-45cf-a378-49d7b97b031f.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc3Mzk2NmJlLTZlMDItNDFkZC04ZWUyLWI2YzAzZTkwYjg1NFwvZDh4aDVoZC05N2MwOTU0OS0wMjQwLTQ1Y2YtYTM3OC00OWQ3Yjk3YjAzMWYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.9E3WkJ8-EiR7mfuQr8JF29GhWcV-l7xkyITJAKQchms",
         price: 4299.00
     },
     {
         id: 5 ,
         name:'Forza Horizon 5',
         description: "Your Ultimate Horizon Adventure awaits! Explore the vibrant and ever-evolving open world landscapes of Mexico with limitless, fun driving action in hundreds of the world’s greatest cars.",
-        image:'https://cdn.cloudflare.steamstatic.com/steam/apps/1551360/capsule_616x353.jpg?t=1638457209',
+        image:"https://images.alphacoders.com/116/thumb-1920-1168382.jpg",
         price: 3499.00
     },
     {
         id: 6 ,
         name: 'Resident Evil Village',
         description: "Experience survival horror like never before in the 8th major installment in the Resident Evil franchise - Resident Evil Village. With detailed graphics, intense first-person action and masterful storytelling, the terror has never felt more realistic.",
-        image:"https://wallpapercave.com/wp/wp8737802.png",
+        image:"https://www.psu.com/wp/wp-content/uploads/2020/10/resident-evil-village-ps5-wallpapers-09.png"
+        ,
         price: 3499.00
     }
 ]
@@ -51,17 +52,10 @@ for(i=0;i<listNames.children.length;i++){
 }
 
 function gameButtonClickHandler(ab){
-    
     for(i=0;i<games.length;i++){
         if(games[i].name == ab.target.textContent){
             gameList.innerHTML=games[i].description;
-            
-            
             gameImg.style.backgroundImage = `url(${games[i].image})`;
         }
     }
-
-
-    
-    //console.log(ab.target.textContent)
 }
