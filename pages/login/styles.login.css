@@ -2,7 +2,7 @@ body{
     background-color: #171717;
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
-    fill: #DA0037;
+    fill: #b60431;
 }
 
 input:focus {
@@ -18,16 +18,16 @@ input:focus {
     font: inherit;
     line-height: 1.42857143;
     vertical-align: middle;
-    border: 1px solid #DA0037;
+    border: 1px solid #b60431;
     width: 100%;
     height: 5.5rem;
     margin-bottom: 0px;
     padding: 1.25rem 1.25rem 1.25rem 2.5rem;
     border-style: solid;
     border-width: 2px;
-    border-color: #DA0037;
+    border-color: #b60431;
     background-color: transparent;
-    color: #DA0037;
+    color: #b60431;
     font-size: 1.8rem;
     font-weight: 300;
 }
@@ -50,15 +50,15 @@ input:focus {
     font: inherit;
     line-height: 1.42857143;
     vertical-align: middle;
-    border: 1px solid #DA0037;
+    border: 1px solid #b60431;
     width: 100%;
     height: 5.5rem;
     margin-bottom: 0px;
     padding: 1.25rem 1.25rem 1.25rem 2.5rem;
     border-style: solid;
     border-width: 2px;
-    border-color: #DA0037;
-    background-color: #DA0037;
+    border-color: #b60431;
+    background-color: #b60431;
     color: #fff5f0;
     font-size: 1.8rem;
     font-weight: 300;
@@ -74,14 +74,14 @@ input:focus {
 
 
 .button:hover{
-    color: #DA0037;
+    color: #b60431;
     background-color: transparent;
 }
 
 .title1{
     font-size: 50px;
     font-weight: bold;
-    color: #DA0037;
+    color: #b60431;
 }
 
 .left-bottom-container{
@@ -104,7 +104,7 @@ input:focus {
 
 .right-container{
     font-size: 15px;
-    background-image: linear-gradient(to right,#DA0037,#b60431);
+    background-image: linear-gradient(to right,#b60431,#99062b);
     width: 28%;
 }
 
@@ -119,11 +119,11 @@ input:focus {
     height: 5.5rem;
     margin-bottom: 0px;
     padding: 1.25rem 1.25rem 1.25rem 2.5rem;
-    border: 1px solid #DA0037;
+    border: 1px solid #b60431;
     border-style: solid;
     border-width: 1px;
-    border-color: #DA0037;
-    color: #DA0037;
+    border-color: #b60431;
+    color: #b60431;
     font-size: 20px;
     font-weight: 300;
     cursor: pointer;
@@ -158,7 +158,7 @@ svg{
 }
 
 .otherbutton{
-    background-color: white;
+    background-color: #fff5f0;
     align-items: center;
 }
 
@@ -167,18 +167,18 @@ svg{
     top: 10%;
     font-size: 50px;
     font-weight: bold;
-    color: white;
+    color: #fff5f0;
 }
 
 .right-container:hover{
-    background-image: linear-gradient(white,white);
+    background-image: linear-gradient(#fff5f0,#fff5f0);
     transition: 1s all ease-in-out;
     width: 50%;
     
 }
 
 .right-container:hover .title3{
-    color: #DA0037;
+    color: #b60431;
 }
 
 /* .right-container:hover .otherbutton{
@@ -187,7 +187,7 @@ svg{
 
 .otherbutton:hover{
     border: none;
-    color: white;
-    background-color: #DA0037;
-    fill: white;
+    color: #fff5f0;
+    background-color: #b60431;
+    fill: #fff5f0;
 }
