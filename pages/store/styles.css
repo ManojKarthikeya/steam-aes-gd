@@ -1,6 +1,6 @@
 body {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 8%;
+    padding-right: 8%;
     background-color: #212121;
     font-family: 'Poppins', sans-serif;
     font-weight: 550;
@@ -206,9 +206,8 @@ input:focus {
 .gameimage{
     background-size: cover;
     position: relative;
-    background-image: url(https://wallpapercave.com/wp/wp3109434.jpg);
-    width: 441.6px;
-    height: 248.4px;
+    width: 435px;
+    height: 240px;
     border-radius: 15px;
 }
 

@@ -1,0 +1,193 @@
+body{
+    background-color: #171717;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    fill: #DA0037;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+
+.field{
+    margin-top: 24px;
+    -webkit-text-size-adjust: 100%;
+    -webkit-box-direction: normal;
+    box-sizing: border-box;
+    font: inherit;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    border: 1px solid #DA0037;
+    width: 100%;
+    height: 5.5rem;
+    margin-bottom: 0px;
+    padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #DA0037;
+    background-color: transparent;
+    color: #DA0037;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.left-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.buttoncontainer{
+    display: flex;
+    gap: 24px;
+}
+
+.button{
+    -webkit-text-size-adjust: 100%;
+    -webkit-box-direction: normal;
+    box-sizing: border-box;
+    font: inherit;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    border: 1px solid #DA0037;
+    width: 100%;
+    height: 5.5rem;
+    margin-bottom: 0px;
+    padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #DA0037;
+    background-color: #DA0037;
+    color: #fff5f0;
+    font-size: 1.8rem;
+    font-weight: 300;
+    cursor: pointer;
+    margin-top: 24px;
+}
+.button:nth-child(1){
+    padding-right: 30px;
+}
+.button:nth-child(2){
+    padding-left: 30px;
+}
+
+
+.button:hover{
+    color: #DA0037;
+    background-color: transparent;
+}
+
+.title1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #DA0037;
+}
+
+.left-bottom-container{
+    margin-top: 100px;
+}
+
+.left-container{
+    position: relative;
+    max-width: 70%;
+    transform: scale(0.85);
+}
+
+.main-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.right-container{
+    font-size: 15px;
+    background-image: linear-gradient(to right,#DA0037,#b60431);
+    width: 28%;
+}
+
+.otherbutton{
+    -webkit-text-size-adjust: 100%;
+    -webkit-box-direction: normal;
+    box-sizing: border-box;
+    font: inherit;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    width: 100%;
+    height: 5.5rem;
+    margin-bottom: 0px;
+    padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+    border: 1px solid #DA0037;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DA0037;
+    color: #DA0037;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+    margin-top: 24px;
+}
+
+span{
+    position: relative;
+    bottom: 30%;
+}
+
+.facebook{
+    width: 38px;
+    height: 38px;
+}
+
+svg{
+    fill: inherit;
+    margin-right: 60px;
+}
+
+.twitter{
+    width: 38px;
+    height: 38px;
+}
+
+.button-container-other{
+    padding: 50px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.otherbutton{
+    background-color: white;
+    align-items: center;
+}
+
+.title3{
+    position: relative;
+    top: 10%;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.right-container:hover{
+    background-image: linear-gradient(white,white);
+    transition: 1s all ease-in-out;
+    width: 50%;
+    
+}
+
+.right-container:hover .title3{
+    color: #DA0037;
+}
+
+/* .right-container:hover .otherbutton{
+
+} */
+
+.otherbutton:hover{
+    border: none;
+    color: white;
+    background-color: #DA0037;
+    fill: white;
+}
