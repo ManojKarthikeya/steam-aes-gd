@@ -206,8 +206,13 @@ input:focus {
 .gameimage{
     background-size: cover;
     position: relative;
+<<<<<<< HEAD
     width: 435px;
     height: 240px;
+=======
+    width: 441.6px;
+    height: 248.4px;
+>>>>>>> 445748611205b4b4a8aba2976263c89877b6c6e1
     border-radius: 15px;
 }
 
