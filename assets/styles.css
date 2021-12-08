@@ -221,3 +221,7 @@ footer .social a {
     font-size: 0.8em;
     width: 40%;
 }
+
+.feature{
+    cursor: pointer;
+}
