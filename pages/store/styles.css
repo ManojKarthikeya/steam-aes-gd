@@ -18,23 +18,17 @@ body {
 .games-title{
     margin-top: 70px;
     margin-bottom: 50px;
-    font-weight: bold;
-    font-size: 30px;
+    font-weight: bolder;
+    font-size: 38px;
     width: max-content;
     position: relative;
-    left: 51%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+
 }
 
 .toppicks{
-    font-weight: bold;
-    font-size: 30px;
+    font-weight: bolder;
+    font-size: 38px;
     width: max-content;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
 }
 
 .navbar {
@@ -150,6 +144,7 @@ input:focus {
 }
 
 .desc{
+    font-size: 20px;
     padding-bottom: 30px;
     position: relative;
     margin-left: 40px;
@@ -198,6 +193,7 @@ input:focus {
 }
 
 .game{
+    cursor: pointer;
     margin: 10px;
     padding: 10px;
     min-width: 28.5%;
@@ -237,5 +233,184 @@ input:focus {
 
 .game:hover{
     transform: scale(1.05);
-    transition: 0.3s transform;
+    transition: 0.3s transform ease-in-out;
+}
+
+.bt-game-image{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    border-radius: 15px;
+}
+
+.bt-content{
+    margin-top: auto;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    /* transform: translateY(135%); */
+    color: white;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    height: 60%;
+    opacity: 1;
+    background: linear-gradient(transparent,black);
+    padding-bottom: 40px;
+}
+
+
+.bt-game-image{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.bt-game-desc{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.bt-game-title{
+    font-size: 50px;
+}
+
+.playnowbutton{
+    position: relative;
+    margin-left: 23vw;
+    padding-bottom: 60px;
+    display: flex;
+    gap: 200px;
+}
+
+.bt-playnow{
+    text-align: center;
+    box-sizing: border-box;
+    padding: 13px 20px;
+    transition: all .2s;
+    width: -webkit-fit-content;
+    justify-content: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    min-width: 220px;
+    display: block;
+    position: relative;
+    text-shadow: 0px 0px 0px #e1d297 !important;
+    box-shadow: inset 0px 0px 5px #b59228 !important;
+    border: 1px solid #d0a137 !important;
+    color: white !important;
+}
+
+.bt-watch-trailer{    text-align: center;
+    border: 0;
+    font: inherit;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    transition: all .2s;
+    width: -webkit-fit-content;
+    border-top: 2px solid #cdc4bd;
+    border-bottom: 2px solid #cdc4bd;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #e5e3e3;
+    text-transform: uppercase;
+    color: #282828;
+    min-width: 220px;
+    display: block;
+    position: relative;}
+
+.bt-game-desc{
+    margin-bottom: 40px;
+}
+
+.bt-game-title{
+    margin-bottom: 70px;
+}
+
+.bt-game{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.addsvg{
+    display: none;
+    width: 30px;
+    height: 30px;
+    margin-left: 400px;
+    margin-top: 20px;
+    fill: #14FFEC;
+}
+
+.game:hover .addsvg{
+    display: block;
+}
+
+footer {
+    width: 100%;
+    display: inline-block;
+    margin: 2em 0;
+    height: 100px;
+    background-color: transparent;
+}
+footer .copyright {
+    width: 50%;
+    float: left;
+}
+@media (max-width: 600px) {
+    footer .copyright {
+        width: 100%;
+   }
+}
+footer .copyright p {
+    padding-left: 10%;
+    color: white;
+    font-size: 0.7em;
+    line-height: 100px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+@media (max-width: 600px) {
+    footer .copyright p {
+        text-align: center;
+        padding: 0;
+   }
+}
+footer .social {
+    width: 50%;
+    float: right;
+}
+@media (max-width: 600px) {
+    footer .social {
+        width: 100%;
+   }
+}
+footer .social a {
+    pointer-events: none;
+    float: right;
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+.linked {
+    background-color: #3095a7;
+    width: 20px;
+}
+
+.support {
+    background-color: #6dcd9a;
+    font-size: 0.8em;
+    width: 40%;
 }

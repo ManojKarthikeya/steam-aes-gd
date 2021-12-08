@@ -87,7 +87,7 @@ div {
 a {
     color: white;
     text-decoration: none;
-    cursor: none;
+    /* cursor: none; */
 }
 
 body{
