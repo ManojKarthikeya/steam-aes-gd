@@ -3,12 +3,7 @@ const menuButton = document.querySelector(".menu");
 const menucontainer = document.querySelector(".menucontainer");
 const main = document.querySelector(".main");
 
-if(Math.random > 0.8){
-	console.log("bruhh");
-}
-
 function menuButtonClickHandler() {
-	console.log("clicked");
 	if (MENU_SHOW == false) {
 		main.style.display="none";
 		menucontainer.style.display = "block";
@@ -20,4 +15,4 @@ function menuButtonClickHandler() {
 	}
 }
 
-
+menuButton.addEventListener('click',menuButtonClickHandler)
